@@ -1,5 +1,6 @@
-import React from 'react'
- 
+import React from 'react';
+import ImageDrop from './ImageDrop';
+
 const Dashboard = props => {
   return (
     <div>
@@ -33,19 +34,14 @@ const Dashboard = props => {
                     </div>
                 </div>
                 <div class="col-lg-10 col-md-12">
-                  <h2 id="upload">Add a New XRAY</h2>
+                  {/* <h2 id="upload">Add a New XRAY</h2> */}
                     <div class="row justify-content-lg-center">
                       <div class="col-lg-6 col-md-12">
                         <h2 id="result">Diagnosis: Acute Bronchitis - Accuracy 92%</h2>
-                        <img id="resultImg" src="../Images/dataset/bronchitis.jpg" />
+                        <img id="resultImg" src='./bronchitis.jpg' />
                       </div>
-                      <form action="/file-upload"
-                        class="dropzone"
-                        id="uploadXray">
-                      </form>
+                      {/* <ImageDrop /> */}
                     </div>
-
-
                 </div>
               </div>
             </div>

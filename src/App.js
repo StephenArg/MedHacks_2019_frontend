@@ -12,20 +12,11 @@ function App() {
   const [loggedIn, setLoggedIn] = useState(false)
   const [currentLogin, setCurrentLogin] = useState("home")
 
-
-  const handleSignupForm = () => {
-    setCurrentLogin("signup")
-  }
-
-  const handleLoginForm = () => {
-    setCurrentLogin("login")
-  }
-
   return (
     <div className="App">
       <Router>
         <Switch>
-          <Route exact path='login' component={Login} />
+          <Route exact path='/login' component={Login} />
           <Route exact path='/signup' component={SignUp} />
           <Route exact path='/dashboard' component={Dashboard} />
           <Route path='/' component={Home} />
