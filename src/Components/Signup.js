@@ -33,7 +33,7 @@ const SignUp = props => {
 					</div>
 					<p className="small text-center">By clicking the Sign Up button, you agree to our <br></br><a href="#">Terms &amp; Conditions</a>, and <a href="#">Privacy Policy</a>.</p>
 				</form>
-				<div className="text-center">Already have an account? <a onClick={props.handleSignupForm}>Login here.</a></div>
+				<div className="text-center">Already have an account? <a href="/login">Login here.</a></div>
 			</div>
     </div>
   )

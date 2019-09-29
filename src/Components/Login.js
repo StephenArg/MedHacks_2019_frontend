@@ -25,7 +25,7 @@ const Login = props => {
                   <button type="submit" className="btn btn-primary btn-block btn-lg">Login</button>
                 </div>
             </form>
-          <div className="text-center" >Need an account? <p onClick={props.handleSignupForm}>Sign Up here.</p></div>
+          <div className="text-center" >Need an account? <a href="/signup">Sign Up here.</a></div>
         </div>
       <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-app.js"></script>
       <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-auth.js"></script>
